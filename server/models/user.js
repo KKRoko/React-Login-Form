@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
@@ -49,3 +50,10 @@ UserSchema.pre('save', function saveHook(next) {
 
 
 module.exports = mongoose.model('User', UserSchema);
+=======
+import bookshelf from '../bookshelf';
+
+export default bookshelf.Model.extend({
+  tableName: 'users'
+});
+>>>>>>> 5ecedfb9201d6810f5d0523a9d5e1cfb94ee7d4b
